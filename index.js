@@ -1,8 +1,8 @@
-import express from ("express")
+import express from "express"
 const app = express()
 
 app.get("/", (req,res)=>{
     console.log("here");
-    res.download('index.js')
+    res.sendStatus('200')
 })
 app.listen(3000)
