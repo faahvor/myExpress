@@ -8,4 +8,6 @@ app.get("/", (req, res) => {
     res.render("index",{text: 'world'});
 });
 
+import userRouter from "./Routes/users.js"
+app.use("/users",userRouter)
 app.listen(3000);
