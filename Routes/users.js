@@ -7,6 +7,9 @@ router.get("/", (req, res) => {
 router.get("/new", (req, res) => {
     res.send("user New Form");
   });
+  router.get("/new", (req, res) => {
+    res.send("user New Form");
+  });
 router.post("/",(req,res)=>{
     res.send('create user')
 })
